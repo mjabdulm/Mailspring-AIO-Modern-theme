@@ -1,0 +1,448 @@
+// .column-RootSidebar {
+//     min-width: 10px !important;
+// }
+
+// .column-RootSidebar : hover  {
+//     width : 32px;
+// }
+
+// .column-RootSidebar {
+//     display : none
+// }
+
+.column-RootSidebar {
+    width: 160px !important;
+    max-width: 160px !important;
+    min-width: 160px !important;
+    margin-left: -159px;
+    // background: @background-darkest;
+    // color: @background-primary;
+    border-left: none;
+    //transition: all 0.1s ease-out;
+
+    &:hover {
+        margin-left: 0;
+    }
+}
+
+.sheet-toolbar {
+  height: 32;
+  min-height: 32;
+  max-height: 32;
+  border-bottom: none;
+
+  .btn.btn-toolbar,
+  body.is-blurred & .btn.btn-toolbar {
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.account-sidebar {
+  background-color: @panel-background-color;
+  min-width: 30px !important;
+}
+
+.toolbar-RootSidebar,
+.toolbar-ThreadList,
+.toolbar-MessageList {
+  padding: 2px 2px;
+
+  .item-container {
+    padding: 2px 2px;
+  }
+}
+
+.toolbar-RootSidebar {
+    background-color: @list-bg;
+    left: 0 !important;
+    width: auto !important;
+}
+
+.toolbar-ThreadList {
+    background-color: @list-bg;
+    margin-left: 78px;
+    padding-right: 78px;
+}
+.scrollbar-track {
+  position: relative;
+  //opacity: 0; this does not work because it also makes the child invisible
+  // I do not make it 100% transparent to allow hovering
+  background-color: rgba(255, 255, 255, 0.05); // this works
+  //padding: 1px !important;
+  width: 8px !important;
+  border-left: 0 !important;
+  transition-delay: 0.1s !important;
+  //transition: opacity 2.0s !important;
+  &:hover {
+    .scrollbar-track-inner {
+  //    background-color: @scrollbar-background !important;
+      width: 4px !important;
+       margin-left: 2px !important;
+       margin-right: 2px !important;
+       border-radius: 3px !important;
+       .scrollbar-handle {
+          width: 4px !important;
+          //background-color: @accent-dark !important;
+   //       background-color: @breeze-blue !important;
+        }
+      }
+    }
+.scrollbar-track-inner {
+  //background-color: @scrollbar-background !important;
+  width: 4px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  border-radius: 3px !important;
+  .scrollbar-handle {
+    //background-color: @accent-dark !important;
+    border-width: 0 0 0 0 !important;
+    //padding: 3px!important;
+    border-radius: 3px !important;
+    width: 4px !important;
+    &:hover {
+      //background-color: @breeze-blue-lighter !important;
+      }        
+    }
+  } 
+}
+
+//.scrolling.scrollbar-track{ // <- when moving, even if not grabbing and not hover
+//.scrolling.dragging{ // <- when grabbing, even not hover but only while moving
+// When grabbin handle with the mouse (even if not hover or not moving)
+  .dragging{
+    //background-color: @scrollbar-background !important;
+    //transition: opacity 20.0s !important;
+    .scrollbar-track-inner{
+      .scrollbar-handle {
+        //background-color: @breeze-blue-lighter !important;
+      }
+    }
+  }
+
+
+
+// // jackiehluo -> Hide search bar when buttons appear in list mode
+// .toolbar-ThreadList .selection-bar .inner {
+//   background: #FFFFFF;
+// }
+
+// // move search bar edges in slightly
+// .toolbar-ThreadList {
+//   padding: 0 4px;
+// }
+
+.list-item.focused,
+.list-item.selected,
+.list-item.hover {
+  // box-shadow: 0px 0px 0px 12px #ffffff !important;
+  // background: #0062E1;
+  // color: #FFFFFF;
+  border-radius: 9px !important;
+  border: none !important;
+  border: 1px !important;
+  margin-left : 2px;
+}
+
+//.thread-search-bar {
+//  width: 640 px;
+//}
+.thread-search-bar {
+  // background: #ededed;
+  border-radius: 0px;
+  box-shadow: none !important;
+  width: 9999px !important;
+  border: 0px solid #e5e5e5 !important;
+}
+
+.search-bar .menu .header-container {
+    input {
+        padding: 0.6em 2em 0.6em 1.8em;
+        font-size: 0.9em;
+        line-height: 1.2em;
+        opacity: 0.6;
+
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    img {
+        opacity: 0.6;
+    }
+}
+
+
+// .thread-list, .draft-list {
+.thread-list {
+    .list-item {
+         border: none;
+  border-radius: 9px !important;
+  border: none !important;
+  border: 1px !important;
+  margin-left : 2px;
+                  font-weight: 500;
+
+        .participants-wrapper {
+            //opacity: 0.4;
+            // text-transform: uppercase;
+            //min-height: 14px;
+               //margin-top : 2em;
+               // margin-bottom : -1em;
+                position : relative;
+                bottom : -47px;
+
+            .participants  {
+                // position : relative;
+                // bottom : 1px;
+                // font-size: 90%;
+                //line-height: 1em;
+                //letter-spacing: 0.06em;
+                //font-weight: 600;
+            }
+            .timestamp {
+                  // position : absolute;
+                  // bottom : 1px;
+                  // right : 1px;
+                  font-size: 90%;
+                //line-height: 1em;
+                //letter-spacing: 0.06em;
+                //font-weight: 600;
+            }
+        }
+         .subject {
+              position : relative;
+              top : -25px;
+             // margin-top : 1em;
+             //font-size: 1.1em;
+             //line-height: 1.2em;
+             //margin-bottom: 0.2em;
+             //  margin-top : -3em;
+             //  margin-bottom : 1.5em;
+             font-weight: 600;
+         }
+         .snippet-and-labels {
+         //    opacity: 0.35;
+              position : relative;
+              top : -20px;
+         }
+        &.unread:not(.focused):not(.selected), &.unread:not(.focused):not(.selected):hover {
+            background: @blue-light;
+            // color: @blue;
+            border: none;
+
+            .snippet {
+                // color: #000000;
+            }
+
+            .subject {
+                //color: @background-dark-accent-2;
+            }
+        }
+
+        &.focused:hover, &.not(focused):hover {
+            background: @blue-light;
+            // color: @background-dark-accent;
+            border: none;
+        }
+
+        &.focused, &.focused:hover {
+            // background: @blue-light;
+            // color: @background-dark-accent;
+            border: none;
+
+            .subject {
+            //    color: @component-active-color;
+            //    font-weight: 800;
+            }
+
+            &:before {
+            //    width: 3px;
+            //    opacity: 1;
+            }
+        }
+}
+}
+
+// .thread-list {
+//     .list-item {
+//         position: relative;
+//         //background: @white;
+//         //color: @background-dark-accent;
+//         border: none;
+//         //animation: slideIn 0.3s ease-out;
+// 
+//         // &:hover {
+//         //     //background: @white;
+//         //     //color: @background-dark-accent;
+//         // }
+// 
+//         // &:before {
+//         //     content: "";
+//         //     position: absolute;
+//         //     top: 0;
+//         //     bottom: 0;
+//         //     left: 0;
+//         //     width: 0;
+//         //     //background: @component-active-color;
+//         //     opacity: 0;
+//         //     //transition: all 0.2s;
+//         // }
+// 
+//         .participants-wrapper {
+//             opacity: 0.4;
+//             text-transform: uppercase;
+//             min-height: 14px;
+// 
+//             .participants, .timestamp {
+//                 font-size: 10px;
+//                 line-height: 1em;
+//                 letter-spacing: 0.06em;
+//                 font-weight: 600;
+//             }
+//         }
+// 
+//         .subject {
+//             font-size: 1.1em;
+//             line-height: 1.2em;
+//             margin-bottom: 0.2em;
+//         }
+// 
+//         .snippet-and-labels {
+//             opacity: 0.35;
+//         }
+// 
+//         .icons-column {
+//             opacity: 0.4;
+//         }
+// 
+//         &.unread:not(.focused):not(.selected), &.unread:not(.focused):not(.selected):hover {
+//             background: @white;
+//             //color: @background-dark-accent;
+//             border: none;
+// 
+//             .snippet {
+//                 //color: @background-dark-accent;
+//             }
+// 
+//             .subject {
+//                 //color: @background-dark-accent-2;
+//             }
+//         }
+// 
+//         &.focused, &.focused:hover {
+//             //background: @background-dark;
+//             //color: @background-dark-accent;
+// 
+//             .subject {
+//                 color: @component-active-color;
+//                 font-weight: 800;
+//             }
+// 
+//             &:before {
+//                 width: 3px;
+//                 opacity: 1;
+//             }
+//         }
+//     }
+// 
+// // .thread-list {
+// //     .list-item {
+// //         position: relative;
+// //         //background: @white;
+// //         //color: @background-dark-accent;
+// //         border: none;
+// //         //animation: slideIn 0.3s ease-out;
+// // 
+// //         &:hover {
+// //             //background: @white;
+// //             //color: @background-dark-accent;
+// //         }
+// // 
+// //         &:before {
+// //             content: "";
+// //             position: absolute;
+// //             top: 0;
+// //             bottom: 0;
+// //             left: 0;
+// //             width: 0;
+// //             //background: @component-active-color;
+// //             opacity: 0;
+// //             //transition: all 0.2s;
+// //         }
+// // 
+// //         .participants-wrapper {
+// //             opacity: 0.4;
+// //             text-transform: uppercase;
+// //             min-height: 14px;
+// // 
+// //             .participants, .timestamp {
+// //                 font-size: 10px;
+// //                 line-height: 1em;
+// //                 letter-spacing: 0.06em;
+// //                 font-weight: 600;
+// //             }
+// //         }
+// // 
+// //         .subject {
+// //             font-size: 1.1em;
+// //             line-height: 1.2em;
+// //             margin-bottom: 0.2em;
+// //         }
+// // 
+// //         .snippet-and-labels {
+// //             opacity: 0.35;
+// //         }
+// // 
+// //         .icons-column {
+// //             opacity: 0.4;
+// //         }
+// // 
+// //         &.unread:not(.focused):not(.selected), &.unread:not(.focused):not(.selected):hover {
+// //             background: @white;
+// //             //color: @background-dark-accent;
+// //             border: none;
+// // 
+// //             .snippet {
+// //                 //color: @background-dark-accent;
+// //             }
+// // 
+// //             .subject {
+// //                 //color: @background-dark-accent-2;
+// //             }
+// //         }
+// // 
+// //         &.focused, &.focused:hover {
+// //             //background: @background-dark;
+// //             //color: @background-dark-accent;
+// // 
+// //             .subject {
+// //                 color: @component-active-color;
+// //                 font-weight: 800;
+// //             }
+// // 
+// //             &:before {
+// //                 width: 3px;
+// //                 opacity: 1;
+// //             }
+// //         }
+// //     }
+// // 
+// //     .thread-icon.thread-icon-unread {
+// //         display: block;
+// //         position: relative;
+// //         background-image: none;
+// // 
+// //         &:before {
+// //             content: "";
+// //             position: absolute;
+// //             top: 9px;
+// //             left: 12px;
+// //             //background: @background-dark-accent-2;
+// //             border-radius: 50%;
+// //             height: 6px;
+// //             width: 6px;
+// //             opacity: 0.3;
+// //         }
+// //     }
+// // }
