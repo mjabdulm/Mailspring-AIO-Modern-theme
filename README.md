@@ -2,10 +2,10 @@
 
 Thanks to the owner of the following themes:
 
-Mailspring Minimalist theme
-Mailspring Apple theme
-Mailspring Stripped them
-Mailspring Snow theme
+1.Mailspring Minimalist theme
+2.Mailspring Apple theme
+3.Mailspring Stripped theme
+4.Mailspring Snow theme
 
 ## Installation
 
