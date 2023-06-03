@@ -1,0 +1,12 @@
+{
+  "name": "AIO Modern",
+  "title": "AIO Modern",
+  "displayName": "AIO Modern",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "AIO : All-in-one them : Mix of all the themes",
+  "license": "MIT",
+  "engines": {
+    "mailspring": "*"
+  }
+}
