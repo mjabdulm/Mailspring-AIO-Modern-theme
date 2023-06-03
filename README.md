@@ -7,6 +7,18 @@ Thanks to the owner of the following themes:
 3. Mailspring Stripped theme
 4. Mailspring Snow theme
 
+## Features
+
+1. Auto hide the folders sidebar
+2. Hover on the left most edge to show folders sidebar
+3. Different colors for unread, read, hover, selected items
+4. Easy to read: Bold font for the subject, and small font for sender
+5. Order of the items:
+   - subject
+   - snippet
+   - sender
+
+
 ## Installation
 
 If you're interested in trying this theme, go ahead and:
