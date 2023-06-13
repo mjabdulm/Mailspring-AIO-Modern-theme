@@ -14,9 +14,9 @@ Thanks to the owner of the following themes:
 3. Different colors for unread, read, hover, selected items
 4. Easy to read: Bold font for the subject, and small font for sender
 5. Order of the items:
+   - sender
    - subject
    - snippet
-   - sender
 
 
 ## Installation
