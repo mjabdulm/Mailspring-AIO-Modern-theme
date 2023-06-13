@@ -189,8 +189,8 @@
             //min-height: 14px;
                //margin-top : 2em;
                // margin-bottom : -1em;
-                position : relative;
-                bottom : -47px;
+                //position : relative;
+                //bottom : -47px;
 
             .participants  {
                 // position : relative;
@@ -211,8 +211,8 @@
             }
         }
          .subject {
-              position : relative;
-              top : -25px;
+              //position : relative;
+              //top : -25px;
              // margin-top : 1em;
              //font-size: 1.1em;
              //line-height: 1.2em;
@@ -223,8 +223,8 @@
          }
          .snippet-and-labels {
          //    opacity: 0.35;
-              position : relative;
-              top : -20px;
+              //position : relative;
+              //top : -20px;
          }
         &.unread:not(.focused):not(.selected), &.unread:not(.focused):not(.selected):hover {
             background: @blue-light;
@@ -264,6 +264,33 @@
 }
 }
 
+.to-participants {
+     margin-top : 7px;
+}
+
+#message-list .message-subject {
+    font-size: 18px;
+    font-weight : 600;
+}
+
+.thread-list .thread-icon, .draft-list .thread-icon {
+   background-size : 12px;
+}
+
+.message-actions-wrap {
+.button-dropdown .primary-item  {
+   height : 0;
+}
+	
+.button-dropdown .secondary-item  {
+    box-shadow: none;
+}
+
+.button-dropdown .secondary-picker {
+   height : 0;
+
+}
+}
 // .thread-list {
 //     .list-item {
 //         position: relative;
