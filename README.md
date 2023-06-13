@@ -13,11 +13,13 @@ Thanks to the owner of the following themes:
 2. Hover on the left most edge to show folders sidebar
 3. Different colors for unread, read, hover, selected items
 4. Easy to read: Bold font for the subject, and small font for sender
-5. Order of the items:
+5. Bold subject in the message view. Similar to "GMail"
+6. Order of the items:
    - sender
    - subject
    - snippet
 
+![AIO_Modern_theme](https://github.com/mjabdulm/Mailspring-AIO-Modern-theme/assets/29857497/e9ac29cf-8b76-44ac-95fd-47cbe438623d)
 
 ## Installation
 
